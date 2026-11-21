@@ -1,0 +1,3 @@
+*.js linguist-documentation
+scripts/report/* linguist-documentation
+*.sql linguist-detectable=true
