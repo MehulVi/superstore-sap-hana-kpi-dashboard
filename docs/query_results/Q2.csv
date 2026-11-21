@@ -1,0 +1,13 @@
+CHECK_NAME,RESULT_VALUE,EXPECTED_VALUE,STATUS
+Fact rows without a customer,0,0,PASS
+Fact rows without a product,0,0,PASS
+Fact rows without a location,0,0,PASS
+Fact rows without an order,0,0,PASS
+Fact rows without a calendar date,0,0,PASS
+Fact order date differs from DIM_ORDER,0,0,PASS
+Duplicate SALES_ID values,0,0,PASS
+Orders shipped before they were ordered,0,0,PASS
+Sales or quantity zero or negative,0,0,PASS
+Discount outside 0 to 1,0,0,PASS
+Rows in V_SALES_ENRICHED minus rows in FACT_SALES,0,0,PASS
+Sales in V_SALES_ENRICHED minus sales in FACT_SALES (rounded),0,0,PASS

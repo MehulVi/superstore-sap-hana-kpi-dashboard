@@ -1,0 +1,5 @@
+ITEM,AFFECTED,HOW_IT_IS_HANDLED
+Product IDs that have more than one product name,32,Surrogate key PRODUCT_KEY in DIM_PRODUCT
+Postal codes that appear with more than one city or state,1,Surrogate key GEO_KEY in DIM_GEOGRAPHY
+Orders whose ID year differs from the order-date year,5,Left as in the source: the order date is used for all time analysis
+Order lines with a negative profit (loss-making lines),1871,Kept: they are real business results and are analysed on the dashboard
